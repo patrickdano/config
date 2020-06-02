@@ -1,0 +1,4 @@
+[module/xmonad]
+type = custom/script
+exec = xmonad-log
+tail = true

@@ -1,0 +1,9 @@
+upgrades="$(pamac checkupdates | awk '/available/ {print $1}')"
+upglen=${#upgrades}
+if (($upglen == 0))
+then
+        echo -e ""
+else
+        echo -e " $upgrades"
+fi
+

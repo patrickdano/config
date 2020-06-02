@@ -1,0 +1,16 @@
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+mount-1 = /run/media/pdano/Tank
+
+label-mounted = %{F#8FBCBB}%{T5}%{T-}%{F-} %percentage_used%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colours-nord.aurora-3}
+
+label-font = 1
+format-padding = 2
+#format-underline = #268bd2
+format-prefix = %{T5} %{T-}
+#label-mounted-foreground = ${colours-nord.frost-1}

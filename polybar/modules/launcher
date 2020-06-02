@@ -1,0 +1,14 @@
+[module/launcher]
+type = custom/script
+
+click-left = rofi -show drun
+click-right = rofi -show run
+#exec = echo %{T3}%{T-}
+#exec = echo %{T7}%{T-}
+exec = echo %{T7}%{T-}
+
+
+format-background = ${colors.background}
+format-foreground = ${colors.launcher}
+format-padding = 2
+

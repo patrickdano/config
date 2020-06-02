@@ -1,0 +1,9 @@
+[module/numtotalwindows]
+type=custom/script
+exec = /home/pdano/.config/polybar/scripts/getnumwindows
+interval = 2
+label-font = 1
+format-padding = 2
+#format-underline = #268bd2
+format-prefix = %{T2}☳ %{T-}
+format-prefix-foreground = ${colours-nord.frost-1}

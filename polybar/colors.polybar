@@ -1,0 +1,47 @@
+[colours-nord]
+polar-night-1 = #2E3440
+polar-night-2 = #3B4252
+polar-night-3 = #434E5E
+polar-night-4 = #4C566A
+
+snow-storm-1 = #D9DEE9
+snow-storm-2 = #E5E950
+snow-stowm-3 = #ECEFF4
+
+frost-1 = #8FBCBB
+frost-2 = #88C0D0
+frost-3 = #81A1C1
+frost-4 = #5E81AC
+
+aurora-1 = #BF616A
+aurora-2 = #D08770
+aurora-3 = #EBCB8B
+aurora-4 = #A3BE8C
+aurora-5 = #B48EAD
+
+[colors]
+background = ${colours-nord.polar-night-1}
+systray_bg = #4C566A
+foreground = #D8DEE9
+systray_fg = #E5E9F0
+primary = #ECEFF4
+secondary = #E5E9F0
+alert = #EBCB8B
+
+black = #2E3449
+white = #ECEFF4
+
+success = #A3Be8C
+warning = #D08770
+danger = #BF616A
+
+launcher = ${colours-nord.frost-4}
+
+trans = #00000000
+semi-trans = #75000000
+
+bg = #000
+fg = #FFF
+
+prefix = #434C5E
+label = #4C566A

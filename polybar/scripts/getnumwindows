@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ "$1" != "" ];
+then
+    currentdesktop=$1
+else
+    currentdesktop=$(xdotool get_desktop)
+fi
+
+#override the above
+currentdesktop=$(xdotool get_desktop)
+
+numtotalwindows=$(xdotool search --desktop $currentdesktop --name "" | wc -l)
+numvisiblewindows=$(xdotool search --desktop $currentdesktop --onlyvisible --name "" | wc -l)
+numhiddenwindows=$(($numtotalwindows-$numvisiblewindows))
+
+echo -e "$numtotalwindows $numhiddenwindows"
+

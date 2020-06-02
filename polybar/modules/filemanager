@@ -1,0 +1,7 @@
+[module/filemanager]
+type = custom/script
+
+click-left = xdg-open ~/&
+exec = echo %{T6}%{T-}
+format-foreground = ${colors.primary}
+format-padding = 1 

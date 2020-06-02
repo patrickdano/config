@@ -1,0 +1,9 @@
+[module/windowname]
+type=custom/script
+exec=/home/pdano/.config/polybar/scripts/getwindowname
+;format-underline = #268bd2
+font-label = 1
+format-prefix = %{T4} %{T-}
+format-padding=2
+format-prefix-foreground = ${colours-nord.frost-1}
+interval=2

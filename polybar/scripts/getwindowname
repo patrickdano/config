@@ -1,0 +1,7 @@
+#!/bin/bash
+
+currentwindow=$(xdotool getactivewindow)
+wmclass=$(xprop -id $currentwindow WM_CLASS | awk '/WM_CLASS/{print $4}' | tr -d \")
+
+echo -e "$wmclass"
+

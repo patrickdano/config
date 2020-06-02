@@ -1,0 +1,47 @@
+[module/xworkspaces-xmonad]
+type=internal/xworkspaces
+
+; Only show workspaces defined on the same output as the bar
+;
+; Useful if you want to show monitor specific workspaces
+; on different bars
+;
+; Default: false
+pin-workspaces = false
+
+; Create click handler used to focus desktop
+; Default: true
+enable-click = true
+
+; Create scroll handlers used to cycle desktops
+; Default: true
+enable-scroll = false
+
+icon-0 = Main;❶
+icon-1 = Terminals;❷
+icon-2 = Dev;❸
+icon-3 = ws4;❹
+icon-4 = ws5;❺
+icon-5 = ws6;❻
+icon-6 = ws7;❼
+icon-7 = ws8;❽
+icon-8 = Games;❾
+
+icon-default = 
+
+format = <label-state>
+format-background = ${colours-nord.polar-night-1}
+label-active = 
+label-occupied = 
+label-urgent = 
+label-empty = 
+
+label-empty-padding = 1
+label-active-padding = 1
+label-urgent-padding = 1
+label-occupied-padding = 1
+
+label-empty-foreground = ${colours-nord.snow-storm-1}
+label-active-foreground = ${colours-nord.aurora-4}
+label-urgent-foreground = ${colours-nord.aurora-1}
+label-occupied-foreground = ${colours-nord.aurora-5}

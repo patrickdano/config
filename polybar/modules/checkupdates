@@ -1,0 +1,9 @@
+[module/checkupdates]
+type=custom/script
+exec=/home/pdano/.config/polybar/scripts/checkupdates
+interval=3600
+font-label = 1
+format-prefix = %{T5}%{T-}
+format-padding=1
+format-prefix-foreground = ${colours-nord.frost-1}
+

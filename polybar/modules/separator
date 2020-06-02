@@ -1,0 +1,7 @@
+[module/sep]
+type = custom/text
+
+content = "|"
+content-foreground = ${colours-nord.snow-storm-1}
+content-background = ${colours-nord.polar-night-1}
+content-padding = 1
