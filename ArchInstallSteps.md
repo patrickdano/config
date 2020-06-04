@@ -195,5 +195,8 @@ systemctl enable NetworkManager.service
 ```
 
 # Exit chroot and reboot
+```sh
 exit
+
 shutdown now
+```
