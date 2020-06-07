@@ -1,0 +1,36 @@
+##This file runs on top of the kakrc in /usr/share/kak
+#keep that file and just add things here
+
+#plug.kak plugin @ https://gitlab.com/andreyorst/plug.kak
+source "/home/pdano/.config/kak/plugins/plug.kak/rc/plug.kak"
+
+#plugins
+plug "andreyorst/plug.kak" domain gitlab.com noload config
+plug "lePerdu/kakboard" %{
+        hook global WinCreate .* %{ kakboard-enable }
+}
+plug "delapouite/kakoune-palette"
+plug "insipx/kak-crosshairs"
+plug "andreyorst/kaktree" config %{
+    hook global WinSetOption filetype=kaktree %{
+        remove-highlighter buffer/numbers
+        remove-highlighter buffer/matching
+        remove-highlighter buffer/wrap
+        remove-highlighter buffer/show-whitespaces
+    }
+    kaktree-enable
+}
+
+#Nord Colour Scheme
+plug "abuffseagull/nord.kak" theme %{ colorscheme nord }
+
+#line number
+#add-highlighter global/ number-lines
+hook global WinCreate .* %{ try %{
+    add-highlighter buffer/numbers          number-lines -relative -hlcursor -separator ' '
+    add-highlighter buffer/matching         show-matching
+    add-highlighter buffer/wrap             wrap -word -indent -marker '↪'
+    add-highlighter buffer/show-whitespaces show-whitespaces -lf ' ' -spc ' ' -nbsp '⋅'
+}}
+
+                   
