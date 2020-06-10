@@ -102,6 +102,13 @@ genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 ```
 # Set the locale
+First find your locale
+```sh
+nvim /etc/locale.gen
+```
+Uncomment your locale (e.g. en_CA-UTF-8)
+
+run locale-gen
 ```sh
 locale-gen
 echo LANG=en_CA.UTF-8 > /etc/locale.conf
