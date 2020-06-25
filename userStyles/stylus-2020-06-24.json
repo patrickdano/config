@@ -1,0 +1,66 @@
+[
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1592022323041,
+		"name": "homedepot.ca",
+		"sections": [
+			{
+				"code": ".html {\n    font-family: Liberation Sans, sans-serif !important;\n}",
+				"domains": [
+					"homedepot.ca"
+				]
+			}
+		],
+		"updateDate": 1592022377286,
+		"_id": "8f9b37a1-ca62-4aa7-87b5-398df8d98170",
+		"_rev": 1592022377286,
+		"id": 1
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1592705183036,
+		"name": "ontario.hibid.com",
+		"sections": [
+			{
+				"code": "body {\n\n    background-color: #4C566A;\n    background-image: none;\n}\n\n.full-width-header .navbar-default,\n.full-width-header .logo,\n.full-width-header .header-spacer {\n    border-color: #BF616A;\n    background-color: #2E3440;\n}\n\n.col-lg-1,\n.col-lg-2,\n.col-lg-3,\n.col-lg-4,\n.col-lg-5,\n.col-lg-6,\n.col-lg-7,\n.col-lg-8,\n.col-lg-9,\n.col-lg-10,\n.col-lg-11,\n.col-lg-12 {\n    background-color: #d8dee9;\n}\n\n.container-fluid {\n    background-color: #2E3440;\n}\n\n.tile-auction, .tile-lot {\n    background-color: #eceff4;\n}\n\n.alert {\n    background-color: #BF616A;\n}\n\ntable a:not(.btn), .table a:not(.btn) {\n    text-decoration: none;\n}\n\n.label-success {\n    background-color: #a3be8c;\n}",
+				"domains": [
+					"ontario.hibid.com"
+				]
+			}
+		],
+		"updateDate": 1592707641913,
+		"_id": "3d8cdccb-969c-4f2b-8e70-7a8c99a2436d",
+		"_rev": 1592707641914,
+		"id": 2
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://userstyles.org/styles/chrome/179897.json",
+		"md5Url": "https://update.userstyles.org/179897.md5",
+		"url": "http://userstyles.org/styles/179897",
+		"originalMd5": "b72d5c0104cc8deb21ad4be748807a9b",
+		"installDate": 1593048558277,
+		"sections": [
+			{
+				"code": "/* Hide annoying stuff */\n.give-gold-button,\n.goldvertisement,\n.embed-comment,\n.nub,\n.sr-list > .separator,\n.sr-list > .separator + .sr-bar,\n#sr-more-link {\n    display: none !important;\n}\n/* Reset */\n* {\n    background-color: transparent !important;\n    border: none !important;\n    /*color: #777 !important;*/\n    color: #eceff4 !important;\n}\n/* Default links */\na {\n    color: #48b !important;\n}\na:visited {\n    color: #369 !important;\n}\na:hover {\n    color: #5ad !important;\n}\n/* Background */\nhtml,\nbody {\n    background-color: #3b4252 !important;\n}\n/* Top bar */\n#header-img {\n    filter: invert(80%) hue-rotate(180deg) !important;\n}\n#sr-header-area {\n    height: 0 !important;\n}\n.sr-bar,\n.dropdown.srdrop {\n    float: right !important;\n    margin-left: 1em;\n}\n.drop-choices,\n.hover-bubble {\n    background: #111 !important;\n}\n.tabmenu .selected a {\n    color: #999 !important;\n}\n/* Side bar */\n.listing-chooser-collapsed .grippy {\n    width: 1px !important;\n}\n.listing-chooser-collapsed .listing-chooser {\n    padding-right: 1px !important;\n}\n.listing-chooser li.selected {\n    box-shadow: none !important;\n}\n.grippy:after {\n    display: none !important;\n}\n/* Inputs and buttons */\ninput,\ntextarea,\n.linkinfo .shortlink input,\n.new-comment .usertext-body,\n.morelink a,\n.morelink:hover a,\n.fancy-toggle-button a,\n.usertext button {\n    background: #333 !important;\n    color: #e5e9f0 !important;\n    font-weight: normal !important;\n}\n/* Listing */\n.listing-page .link:hover {\n    background: #262626 !important;\n}\n.thing .title {\n    color: #aaa !important;\n}\n.title:visited {\n    color: #777 !important;\n}\n.thing .title:hover {\n    color: #ccc !important;\n}\n.arrow {\n    opacity: 0.3 !important;\n}\n.expando-button {\n    opacity: 0.3 !important;\n    background-color: transparent !important;\n}\n.moderator,\n.green {\n    color: #3a3 !important;\n}\n.admin,\n.nsfw-stamp * {\n    color: #a66 !important;\n}\n.pagename a,\n.trophy-name {\n    color: #999 !important;\n}\n.buttons li {\n    padding: 0 !important;\n}\n.buttons a {\n    margin-right: 8px !important;\n    ;\n    color: #888 !important;\n}\n.buttons a:visited {\n    color: #666 !important;\n}\n.buttons a:hover {\n    color: #aaa !important;\n}\n.pagename,\n.tabmenu li,\n.link .midcol,\n.buttons a,\n.subreddit {\n    font-weight: normal !important;\n}\n.search-expando.collapsed:before,\n.comment-fade {\n    display: none !important;\n}\n\n.entry.res-selected,\n.entry.res-selected .md-container {\n    background-color: #2e3440  !important;\n}\n\n/* Comments */\n.link .usertext .md,\nblockquote,\npre,\ncode,\n.gold-accent {\n    background-color: #111 !important;\n}\n.md blockquote {\n    border-left: solid 4px #333 !important;\n}\n.md td {\n    border: solid 1px #333 !important;\n}\nhr {\n    border-bottom: solid 1px #333 !important;\n}\n.comment .author,\n.morecomments a {\n    font-weight: normal !important;\n}\n\n.res-commentBoxes .comment .comment .comment,\n.res-commentBoxes .comment .comment .comment .comment .comment,\n.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment,\n.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment {\n    background-color: #3b4252;\n}\n\n.res-commentBoxes .comment .comment,\n.res-commentBoxes .comment .comment .comment .comment,\n.res-commentBoxes .comment .comment .comment .comment .comment .comment,\n.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment,\n.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {\n    background-color: #434c5e;\n}\n\n.thing .title{\n    color: #eceff4 !important;\n}\n\n/* RES */\n.guider,\n.guiders_button,\n.RESDialogSmall,\n.RESDropdownOptions,\n.res-fancy-toggle-button,\n#RESConsoleContainer,\n#RESShortcutsAddFormContainer {\n    background: #222 !important;\n}",
+				"domains": [
+					"reddit.com"
+				]
+			}
+		],
+		"name": "Old Reddit Minimal Dark Dota2",
+		"originalDigest": "f398b18a2f6d9dbed548f14e01998b78023927a8",
+		"_id": "c0dd2626-e8b8-442b-a106-3e23b5bab078",
+		"_rev": 1593050939838,
+		"id": 3,
+		"updateDate": 1593050939838
+	}
+]
