@@ -157,20 +157,6 @@ mount /dev/sda1 /boot/efi # or /dev/nvme0n1p1
 grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
-# Install DE
-> Choose whatever DE you want
-If you have an AMD card
-```sh
-sudo pacman -S xf86-video-amdgpu mesa
-```
-### Install X
-```sh
-pacman -S xorg xorg-server
-```
-### Install DE environment (Cinnamon)
-```sh
-pacman -S cinnamon
-```
 
 # Install sudo
 ```sh
@@ -207,3 +193,80 @@ exit
 
 shutdown now
 ```
+
+---
+# Install X
+### Install video card drivers
+I have an AMD card, so installing AMD drivers, consult the arch wiki for nVidia or Intel driver installation.
+```sh
+sudo pacman -S xf86-video-amdgpu mesa
+```
+### Then install X
+```sh
+sudo pacman -S xorg xorg-server
+```
+### Option 1: Install DE 
+> Choose whatever DE you want, if you install a DE choose the DE you like, I prefer Cinnamon.
+> If you want a Window Manager, skip this step, and goto the Window Manager section
+### Install DE environment (Cinnamon)
+```sh
+pacman -S cinnamon
+```
+
+### Install Window Manager 
+### Pre-requisites
+**Login Manager**
+> I like Lightdm with a greeter.
+> in arch lightdm slick greeter is in the AUR, so you can install slick greeter from the AUR, below command uses the standard greeter
+```sh
+sudo pacman -S lightdm lightdm-gtk-greeter
+```
+
+**Wallpapager Manager**
+> I like nitrogen, but also have feh as well.
+```sh
+sudo pacman -S nitrogen feh
+```
+
+**Compositor**
+> in arch, picom is popular.
+```sh
+sudo pacman -S picom
+```
+**Text Editor**
+> I like neovim.
+```sh
+sudo pacman -S neovim
+```
+**Terminal Emulator**
+> I like Alacritty.
+```sh
+sudo pacman -S alacritty
+```
+**Web Browser**
+> Firefox rules the world.
+```sh
+sudo pacman -S firefox
+```
+**Fonts**
+> You need fonts, standard fonts are ugly in an arch install.
+> fonts are mostly in the AUR, so skip to the AUR section for those details
+> but this is a basic set of ttf fonts (Ubuntu fonts)
+```sh
+sudo pacman -S ttf-ubuntu-font-family
+```
+**App Launcher**
+> Install both dmenu and rofi
+```sh
+sudo pacman -S dmenu rofi
+```
+### choose a WM (I use spectrwm)
+```sh
+sudo pacman -S spectrwm
+```
+
+### The above can be done in one command
+```sh
+sudo pacman -S lightdm lightdm-gtk-greeter nitrogen feh picom neovim alacritty firefox ttf-ubuntu-font-family dmenu rofi spectrwm
+```
+once complete, setup by configuring your wm based on your preferences.
