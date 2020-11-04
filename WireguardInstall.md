@@ -62,7 +62,7 @@ $ sudo wg show
 ```
 ```sh
 interface: wg0
-  public key: EMVR6sCpZXwOZaWb1zlhfT25pR9NzfruCxXxqfAMlnc=
+  public key: <public key here>
   private key: (hidden)
   listening port: 51820
 ```
@@ -106,7 +106,7 @@ Address = 192.168.10.3/32, fd86:ea04:1115::3/128  #Be sure to use the same IP yo
 
 [Peer]
 PublicKey = EMVR6sCpZXwOZaWb1zlhfT25pR9NzfruCxXxqfAMlnc=  #public key of the server 
-Endpoint = wg.dano.tech:51820 #Internet Accessible endpoint
+Endpoint = publicipaddressofwireguardserver:51820 #Internet Accessible endpoint
 AllowedIPs = 0.0.0.0/0, ::/0 #IP's that the device is allowed to access (this means all IPs)
 ```
 Step 3: run the client connection
@@ -142,8 +142,7 @@ $ nvim /etc/wireguard/android.conf
 ```sh
 [Interface]
 PrivateKey = CLIENT_PRIVATE_KEY
-Address = 10.220.0.2/32, fd86:ea04:1115::2/128
-DNS = 8.8.8.8
+Address = 192.168.10.2/32, fd86:ea04:1115::2/128
  
 [Peer]
 PublicKey = VPN_SERVER_PUBLIC_KEY
