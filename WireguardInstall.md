@@ -16,7 +16,11 @@ $ wg genkey | tee /etc/wireguard/client2-private.key | wg pubkey > /etc/wireguar
 $ sudo nvim /etc/wireguard/wg0.conf
 ```
 
-paste in the following
+> paste in the following
+> note "eth0" should be specific to your computer, get network names using 
+> ```sh
+> $ ip address show
+> ```
 
 ```sh
 [Interface]
