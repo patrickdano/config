@@ -105,7 +105,7 @@ ListenPort = 51820
 Address = 192.168.10.3/32, fd86:ea04:1115::3/128  #Be sure to use the same IP you have in the wg0 conf file created earlier.
 
 [Peer]
-PublicKey = EMVR6sCpZXwOZaWb1zlhfT25pR9NzfruCxXxqfAMlnc=  #public key of the server 
+PublicKey = <public key here>  #public key of the server 
 Endpoint = publicipaddressofwireguardserver:51820 #Internet Accessible endpoint
 AllowedIPs = 0.0.0.0/0, ::/0 #IP's that the device is allowed to access (this means all IPs)
 ```
