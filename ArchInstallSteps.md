@@ -94,7 +94,7 @@ mount /dev/nvme0n1p2 /mnt
 ```
 ### Use pacstrap to install arch (add apps to the end of this line e.g. neovim)
 ```sh
-pacstrap /mnt base linux linux-firmware neovim 
+pacstrap /mnt base linux linux-firmware neovim networkmanager 
 ```
 # Configure the system
 ```sh
